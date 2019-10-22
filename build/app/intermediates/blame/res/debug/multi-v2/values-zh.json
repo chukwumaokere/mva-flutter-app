@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Chuck\\Documents\\Flutter\\mva-flutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh\\values-zh.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Chuck\\.gradle\\caches\\transforms-1\\files-1.1\\ucrop-2.2.4.aar\\710d58db7acb7cd66779e050d789f456\\res\\values-zh\\values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}

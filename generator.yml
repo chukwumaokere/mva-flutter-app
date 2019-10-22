@@ -1,0 +1,114 @@
+  ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ git pull git@github.com:vixur-legacy/todaysepicure.git master
+  Enter passphrase for key '/home/ubuntu/.ssh/id_rsa':
+  remote: Enumerating objects: 9, done.
+  remote: Counting objects: 100% (9/9), done.
+  remote: Compressing objects: 100% (8/8), done.
+  remote: Total 9 (delta 0), reused 9 (delta 0), pack-reused 0
+  Unpacking objects: 100% (9/9), done.
+    From github.com:vixur-legacy/todaysepicure
+    * branch              master     -> FETCH_HEAD
+    Merge made by the 'recursive' strategy.
+    apps/backend/modules/restaurant/config/generator.yml | 2 +-
+    1 file changed, 1 insertion(+), 1 deletion(-)
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 4 commits.
+    (use "git push" to publish your local commits)
+
+  Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   apps/backend/config/settings.yml
+    modified:   apps/frontend/config/settings.yml
+    modified:   lib/mysqlM.class.php
+
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+
+    config/databases.txt
+    lib/cronReservation.class.php.save
+    lib/testCron.php
+    lib/vendor/symfony_v1/
+    web/uploads.zip
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ sudo nano apps/backend/modules/restaurant/config/generator.yml
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ clear
+
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ git branch
+    * master
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ git status
+    On branch master
+    Your branch is ahead of 'origin/master' by 4 commits.
+    (use "git push" to publish your local commits)
+
+  Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git checkout -- <file>..." to discard changes in working directory)
+
+    modified:   apps/backend/config/settings.yml
+    modified:   apps/frontend/config/settings.yml
+    modified:   lib/mysqlM.class.php
+
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+
+    config/databases.txt
+    lib/cronReservation.class.php.save
+    lib/testCron.php
+    lib/vendor/symfony_v1/
+    web/uploads.zip
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure$ cd apps/backend/modules/restaurant/config
+    ubuntu@ip-172-31-3-120:/var/www/html/todaysepicure/apps/backend/modules/restaurant/config$ sudo nano generator.yml
+
+
+
+
+
+
+
+
+
+
+
+    GNU nano 2.9.3                                            generator.yml
+
+  generator:
+    class: sfDoctrineGenerator
+    param:
+      model_class:           Restaurant
+      theme:                 admin
+      non_verbose_templates: true
+      with_show:             false
+      singular:              ~
+      plural:                ~
+      route_prefix:          restaurant
+      with_doctrine_route:   true
+      actions_base_class:    sfActions
+
+      config:
+        actions: ~
+        fields:
+          days_filter: { label: "Show reservations" }
+          address1: { label: "Adress line 1" }
+          address2: { label: "Adress line 2" }
+          phone: { label: "Phone #" }
+          confirm_phone: { label: "Confirmation telephone #" }
+          cancel_phone: { label: "Cancellation phone #" }
+          fax: { label: "Fax #" }
+          is_active: { label: "Active" }
+          is_request_only: { label: "Request only" }
+          allow_request: { label: "Allow request" }
+          has_party_size_lock: { label: "Party size lock" }
+          can_change_name: { label: "Name change Lock" }
+          request_limit: { label: "Request Limit" }
+          request_price_less_three_day: { label: "3 days or less" }
+          request_price_more_three_day: { label: "More than 3 days" }
+          free_request: { label: "Number of free request allowed" }
+          open_lunch: { label: "Brunch Served" }
+            [ Read 75 lines ]
+    ^G Get Help     ^O Write Out    ^W Where Is     ^K Cut Text     ^J Justify      ^C Cur Pos      M-U Undo        M-A Mark Text
+    ^X Exit         ^R Read File    ^\ Replace      ^U Uncut Text   ^T To Spell     ^_ Go To Line   M-E Redo        M-6 Copy Text
